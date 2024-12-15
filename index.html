@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --Yellow: hsl(47, 88%, 63%);
+      --White: hsl(0, 0%, 100%);
+      --Gray-500: hsl(0, 0%, 42%);
+      --Gray-950: hsl(0, 0%, 7%);
+    }
+
+    html {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1440px;
+      height: 100vh;
+      font-size: 16px;
+      font-family: FigTree;
+      background-color: var(--Yellow);
+    }
+
+    .card {
+      box-sizing: border-box;
+      width: 384px;
+      height: 522px;
+      background-color: var(--White);
+      padding: 24px;
+      border-radius: 20px;
+      color: var(--Gray-950);
+      font-size: 14px;
+
+      box-shadow: 8px 8px ;
+    }
+
+    .card-header img {
+      border-radius: 10px;
+    }
+
+    .card-body {
+      margin: 24px 0;
+    }
+
+    .category {
+      display: flex;
+      width: 82px;
+      height: 29px;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--Yellow);
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .description {
+      color: var(--Gray-500);
+      font-size: 16px;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+    }
+
+    .card-footer img{
+      width: 32px;
+      height: 32px;
+    }
+
+    .author-name {
+      font-weight: bold;
+      margin-left: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <img src="./assets/images/illustration-article.svg" alt="">
+    </div>
+    <div class="card-body">
+      <div class="category">Learning</div>
+      <p class="published-date">Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+    <div class="card-footer">
+      <img src="./assets/images/image-avatar.webp" alt="">
+      <p class="author-name">Greg Hooper</p>
+    </div>
+  </div>
+</body>
+</html>
